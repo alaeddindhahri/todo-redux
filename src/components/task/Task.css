@@ -1,0 +1,26 @@
+.task-container{
+    /* border: solid; */
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+    background-color: rgb(235, 235, 235); 
+    margin: 1% 0%;
+}
+.do-undo{
+    position: relative !important;
+    margin: 0.3rem 2rem !important;
+}
+.task-description{
+    flex-grow: 1;
+    font-size: 1.5rem;
+    /* border: solid; */
+    margin: 0px ;
+}
+.btn-edit, .btn-delete{
+    /* border: solid !important; */
+    width: 5%;
+    box-sizing: content-box;
+    /* padding: .3% !important; */
+    font-size: 1.5vw !important;
+    border-radius: 0px !important;
+}

@@ -1,22 +1,10 @@
-.App {
-  text-align: center;
+.container-fluid{
+    /* border: solid; */
 }
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
+.todo-header{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+    background-color: rgb(235, 235, 235);
+    margin: 0px 15px;
 }
