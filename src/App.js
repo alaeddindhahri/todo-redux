@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import InputBar from './components/inputBar/InputBar';
 import TasksContainer from './components/tasksContainer/TasksContainer';
-import TaskEditModal from './components/editTask/EditTask'
+// import TaskEditModal from './components/editTask/EditTask'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -23,11 +23,11 @@ function App() {
           <TasksContainer/>
         </div>
       </div>
-      <div className="row">
+      {/* <div className="row">
         <div className="col">
-          {/* <TaskEditModal/> */}
+          <TaskEditModal/>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

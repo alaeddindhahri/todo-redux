@@ -14,7 +14,7 @@ const tasksReducer = (state=[],action) => {
         case ADD_TASK:
             return state.concat({id:getLastTaskKey(state)+1,isDone:false,description:action.taskDescription});
         case EDIT_TASK:
-            return;
+            return state.map(el=>el.id===action.id?{...el,description:action.newDescription}:el);
         default:return state;
     }
     // return state

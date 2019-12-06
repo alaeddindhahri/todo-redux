@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
-import {EDIT_TASK} from '../../constants/ActionTypes'
-import store from '../../store/Store'
 import './EditTask.css'
 
 export class EditTask extends Component {
+
     render() {
         return (
-            <div className="modal" tabIndex="-1" role="dialog">
+            <div className="modal"  tabIndex="-1" role="dialog">
                 <div className="modal-dialog" role="document">
                     <div className="modal-content">
                     <div className="modal-header">
