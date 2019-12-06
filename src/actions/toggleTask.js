@@ -1,4 +1,4 @@
-import {TOGGLE_TASK} from '../constants/ActionTypes'
+import {TOGGLE_TASK} from './ActionTypes'
 
 export const toggleTask=id=>(
     {

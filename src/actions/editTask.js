@@ -1,4 +1,4 @@
-import {EDIT_TASK} from '../constants/ActionTypes'
+import {EDIT_TASK} from './ActionTypes'
 
 export const editTask=(id,newDescription)=>(
     {

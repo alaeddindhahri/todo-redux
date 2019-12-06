@@ -1,6 +1,5 @@
 import {createStore,combineReducers} from 'redux';
 import tasksReducer from '../reducers/tasksReducer'
-// import TasksContainer from '../components/tasksContainer/TasksContainer';
 
 
 
@@ -16,7 +15,5 @@ const initialState={
 const rootReducer = combineReducers({
     tasks: tasksReducer
 })
-// console.log(rootReducer)
 
 export default createStore(rootReducer,initialState, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
-// console.log(store.getState())

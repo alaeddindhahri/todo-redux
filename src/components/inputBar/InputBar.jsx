@@ -3,18 +3,11 @@ import {addTask} from '../../actions/addTask'
 import store from '../../store/Store'
 import './InputBar.css'
 
-
-// function grabTask(e){
-//     let tmpDesc = e.target.value
-//     // console.log(tmpDesc)
-// }
-
 export class InputBar extends Component {
     state={
         tmpDescription:''
     }
     grabTask=e=>{
-        // console.log(tmpDesc)
         this.setState({
             tmpDescription:e.target.value
         })
@@ -27,7 +20,6 @@ export class InputBar extends Component {
         if(!this.state.tmpDescription.replace(/\s/g, '').length){
             return false
         }
-        // console.log("description on submit: "+this.state.tmpDescription)
         store.dispatch(addTask(this.state.tmpDescription))
         this.setState({
             tmpDescription:''

@@ -1,4 +1,4 @@
-import {DELETE_TASK} from '../constants/ActionTypes'
+import {DELETE_TASK} from './ActionTypes'
 
 export const deleteTask=id=>(
     {

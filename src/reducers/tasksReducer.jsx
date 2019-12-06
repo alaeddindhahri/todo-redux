@@ -1,11 +1,10 @@
-import {DELETE_TASK} from '../constants/ActionTypes'
-import {TOGGLE_TASK} from '../constants/ActionTypes'
-import {ADD_TASK} from '../constants/ActionTypes'
-import {EDIT_TASK} from '../constants/ActionTypes'
+import {DELETE_TASK} from '../actions/ActionTypes'
+import {TOGGLE_TASK} from '../actions/ActionTypes'
+import {ADD_TASK} from '../actions/ActionTypes'
+import {EDIT_TASK} from '../actions/ActionTypes'
 import {getLastTaskKey} from '../actions/addTask'
 
 const tasksReducer = (state=[],action) => {
-    // console.log("action in reducer: "+action.type)
     switch(action.type){
         case DELETE_TASK:
             return state.filter(el=>el.id!==action.id);
@@ -17,7 +16,6 @@ const tasksReducer = (state=[],action) => {
             return state.map(el=>el.id===action.id?{...el,description:action.newDescription}:el);
         default:return state;
     }
-    // return state
 
 }
 

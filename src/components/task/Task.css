@@ -1,5 +1,4 @@
 .task-container{
-    /* border: solid; */
     display: flex;
     justify-content: space-between !important;
     align-items: center;
@@ -13,16 +12,13 @@
 .task-description{
     flex-grow: 1;
     font-size: 1.5rem;
-    /* border: solid; */
     margin: 0px ;
     background-color: transparent;
     border: transparent;
 }
 .btn-edit, .btn-delete{
-    /* border: solid !important; */
     width: 5%;
     box-sizing: content-box;
-    /* padding: .3% !important; */
     font-size: 1.5vw !important;
     border-radius: 0px !important;
 }
